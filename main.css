@@ -2,18 +2,12 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
 }
 
-h1 {
-  font-size: 50px;
-  line-height: 54px;
-  font-weight: 300;
-}
-
 body {
-  font-family: "Fira_sans", sans-serif;
+  font-family: "Fira_sans light", sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
@@ -23,20 +17,201 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
   color: #000000;
 }
 
+.section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .primary-section {
-  background-image: url(./src/bg.jpg);
+  background-image: url(./images/bg_mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 44px;
+  padding-bottom: 60px;
+}
+
+.socials-list {
+  margin-bottom: 24px;
 }
 
 .socials-link {
   display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.email-item {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 36px;
 }
 
 .behance-link {
   text-transform: uppercase;
+}
+
+.project-link--pb :hover {
+  background-image: url('./images/pb_hover.png');
+  background-repeat: no-repeat;
+}
+
+.project-link--abstract :hover {
+  background-image: url('./images/am_hover.jpg');
+  background-repeat: no-repeat;
+}
+
+.project-link--uber:hover {
+  background-image: url('./images/uber_hover.png');
+  background-repeat: no-repeat;
+}
+
+.text-container {
+  margin-bottom: 16px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 49px;
+  font-weight: 300;
+  letter-spacing: -3px;
+  margin-bottom: 4px;
+}
+
+.subheading {
+  font-family: "Fira_sans regular";
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+.description {
+  font-family: "Fira_sans regular";
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.socials-item {
+  margin-bottom: 20px;
+}
+
+.socials-text {
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 4px;
+}
+
+.socials-link:hover .socials-icon path {
+  fill: #410D83;
+  transition: 0.2s ease;
+}
+
+.socials-link:hover {
+  color: #410D83;
+  transition: 0.2s ease;
+}
+
+.second-heading {
+  font-family: "Fira_sans medium";
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-bottom: 8px;
+}
+
+.caption {
+  font-family: "Fira_sans regular";
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.img-container {
+  margin: 24px -16px 0;
+  display: block;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-second {
+  margin-top: 36px;
+}
+
+.project-item,
+.subject,
+.project-place {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.subject {
+  font-family: "Fira_sans regular";
+  display: block;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.project-place {
+  color: #371B5A;
+}
+
+.project-list {
+  margin-bottom: 16px;
+}
+
+.project-item {
+  font-family: "Fira_sans light";
+  text-transform: uppercase;
+}
+
+.project-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.project-link:hover {
+  color: #410D83;
+  transition: 0.2s ease;
+}
+
+.project-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.image-flex {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: -16px;
+  margin-left: -16px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+}
+
+.project-image:not(:last-child) {
+  margin-right: 24px;
 }

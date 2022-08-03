@@ -5,62 +5,102 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio site</title>
-  <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./media.css">
 </head>
 <body>
   <main>
-    <section class="primary-section">
-      <h1>Ilona Khomenko</h1>
-      <b class="subheading">UI/UX Designer</b>
-      <div>
-        <img src="./src/Ilona Khomenko.jpg" alt="Ilona Khomenko">
+    <section class="section primary-section">
+      <div class="photo-wrap">
+        <h1>Ilona Khomenko</h1>
+        <b class="subheading">UI/UX Designer</b>
+        <picture class="img-container">
+          <source media="(max-width: 500px)" srcset="./images/Ilona_Khomenko_mob.jpg">
+          <source media="(max-width: 1024px)" srcset="./images/Ilona_Khomenko_tab.jpg" media="(min-width: 1024px)">
+          <img src="./images/Ilona_Khomenko.jpg" width="547" height="606" alt="Ilona Khomenko" class="main-img">
+        </picture>
         <p class="description">Hi! I am Ilona Khomenko. I use iterative approach in single page and mobile applications design. 
           Thinking about users and never stop asking questions are the main points when I do user research. I have
-           background of frontend development (2 years experience of writing semantic HTML and CSS coding) and psychology
+            background of frontend development (2 years experience of writing semantic HTML and CSS coding) and psychology
         </p>
       </div>
-      <p>Contact me: <a href="mailto:ilonasurdream@gmail.com">ilonasurdream@gmail.com</a></p>
-      <ul class="socials-list">
-        <li class="socials-item">
-          <a class="socials-link" href="https://www.linkedin.com/in/ilona-khomenko-47888281/">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715h-.001ZM7.003 8.575a1.546 1.546 0 0 1-1.287-2.409 1.548 1.548 0 1 1 1.286 2.409h.001Zm1.336 9.764H5.666V9.75H8.34v8.589h-.001ZM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.004Z" fill="#000"/></svg>
-            <span>LinkedIn</span>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a class="socials-link" href="https://www.behance.net/ilonakhomenko">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613a3.11 3.11 0 0 1-.974 1.114 4.315 4.315 0 0 1-1.399.64 6.29 6.29 0 0 1-1.609.206H2V5.731h5.803Zm-.351 4.972c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707a1.114 1.114 0 0 0-.417-.428 1.683 1.683 0 0 0-.597-.215 3.609 3.609 0 0 0-.697-.061H4.71v2.875h2.742Zm.151 5.239c.267 0 .521-.023.76-.077.241-.052.455-.136.637-.261.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.414-.404H4.71v3.39h2.893v-.001Zm8.565-.041c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693-.702 0-1.334-.113-1.9-.337a4.033 4.033 0 0 1-1.439-.958 4.37 4.37 0 0 1-.905-1.485 5.432 5.432 0 0 1-.32-1.899c0-.666.111-1.289.329-1.864a4.375 4.375 0 0 1 .934-1.493c.405-.42.885-.751 1.444-.994a4.634 4.634 0 0 1 1.858-.362c.754 0 1.413.146 1.979.44.549.28 1.025.685 1.39 1.182.363.493.622 1.058.783 1.691.161.632.217 1.292.171 1.983h-6.431c.001.704.238 1.371.606 1.729Zm2.812-4.681c-.291-.322-.783-.496-1.385-.496-.391 0-.714.065-.974.199-.238.12-.449.287-.62.491a1.77 1.77 0 0 0-.328.628 2.817 2.817 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409Zm-3.918-4.663h4.989v1.215h-4.989V6.557Z" fill="#000"/></svg>
-            <span>Behance</span>
-          </a>
-        </li>
-        <li class="socials-item">
-          <a  class="socials-link" href="https://www.instagram.com/ilona_lakritz/">
-            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 9.768a2.232 2.232 0 1 0 0 4.463 2.232 2.232 0 0 0 0-4.463Zm8.937-2.205a5.876 5.876 0 0 0-.378-2.034 3.598 3.598 0 0 0-2.088-2.088 5.877 5.877 0 0 0-2.034-.378C15.276 3 14.934 3 12 3s-3.276 0-4.437.063a5.877 5.877 0 0 0-2.034.378 3.6 3.6 0 0 0-2.088 2.088 5.877 5.877 0 0 0-.378 2.034C3 8.724 3 9.066 3 12s0 3.276.063 4.437c.01.697.137 1.388.378 2.043.18.474.46.903.819 1.26a3.5 3.5 0 0 0 1.269.819c.65.245 1.339.373 2.034.378C8.724 21 9.066 21 12 21s3.276 0 4.437-.063a5.876 5.876 0 0 0 2.034-.378c.477-.177.91-.457 1.269-.819.36-.357.64-.786.819-1.26a5.941 5.941 0 0 0 .378-2.043C21 15.276 21 14.934 21 12s0-3.276-.063-4.437Zm-2.286 7.2a5.157 5.157 0 0 1-.351 1.62 3.474 3.474 0 0 1-1.917 1.917 5.158 5.158 0 0 1-1.629.315H9.246a5.158 5.158 0 0 1-1.629-.315 3.159 3.159 0 0 1-1.179-.774 3.16 3.16 0 0 1-.738-1.143 4.94 4.94 0 0 1-.306-1.629V9.246c.01-.556.113-1.107.306-1.629.166-.446.43-.85.774-1.179A3.231 3.231 0 0 1 7.617 5.7a5.157 5.157 0 0 1 1.629-.315h5.508a5.157 5.157 0 0 1 1.629.315c.446.166.85.43 1.179.774.326.323.578.713.738 1.143.192.522.299 1.073.315 1.629V12c0 1.854.063 2.043.036 2.754v.009Zm-1.44-6.696a2.142 2.142 0 0 0-1.269-1.269A3.6 3.6 0 0 0 14.7 6.6H9.3a3.6 3.6 0 0 0-1.242.234 2.142 2.142 0 0 0-1.269 1.224c-.13.4-.195.82-.189 1.242v5.4c.009.424.088.844.234 1.242a2.142 2.142 0 0 0 1.269 1.269c.384.141.788.22 1.197.234h5.4a3.602 3.602 0 0 0 1.242-.234 2.143 2.143 0 0 0 1.269-1.269c.15-.397.23-.817.234-1.242V9.3c0-.425-.08-.846-.234-1.242v.009ZM12 15.438A3.429 3.429 0 0 1 8.571 12 3.438 3.438 0 1 1 12 15.438Zm3.6-6.201a.81.81 0 0 1 0-1.611.81.81 0 0 1 0 1.611Z" fill="#000"/></svg>
-            <span>Instagram</span>
-          </a>
-        </li>
-      </ul>
+      <div class="primary-wrap">
+        <div class="contacts">
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link" href="https://www.linkedin.com/in/ilona-khomenko-47888281/">
+                <svg class="socials-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715h-.001ZM7.003 8.575a1.546 1.546 0 0 1-1.287-2.409 1.548 1.548 0 1 1 1.286 2.409h.001Zm1.336 9.764H5.666V9.75H8.34v8.589h-.001ZM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.004Z" fill="#000"/></svg>
+                <span class="socials-text">LinkedIn</span>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="https://www.behance.net/ilonakhomenko">
+                <svg class="socials-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613a3.11 3.11 0 0 1-.974 1.114 4.315 4.315 0 0 1-1.399.64 6.29 6.29 0 0 1-1.609.206H2V5.731h5.803Zm-.351 4.972c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707a1.114 1.114 0 0 0-.417-.428 1.683 1.683 0 0 0-.597-.215 3.609 3.609 0 0 0-.697-.061H4.71v2.875h2.742Zm.151 5.239c.267 0 .521-.023.76-.077.241-.052.455-.136.637-.261.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.414-.404H4.71v3.39h2.893v-.001Zm8.565-.041c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693-.702 0-1.334-.113-1.9-.337a4.033 4.033 0 0 1-1.439-.958 4.37 4.37 0 0 1-.905-1.485 5.432 5.432 0 0 1-.32-1.899c0-.666.111-1.289.329-1.864a4.375 4.375 0 0 1 .934-1.493c.405-.42.885-.751 1.444-.994a4.634 4.634 0 0 1 1.858-.362c.754 0 1.413.146 1.979.44.549.28 1.025.685 1.39 1.182.363.493.622 1.058.783 1.691.161.632.217 1.292.171 1.983h-6.431c.001.704.238 1.371.606 1.729Zm2.812-4.681c-.291-.322-.783-.496-1.385-.496-.391 0-.714.065-.974.199-.238.12-.449.287-.62.491a1.77 1.77 0 0 0-.328.628 2.817 2.817 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409Zm-3.918-4.663h4.989v1.215h-4.989V6.557Z" fill="#000"/></svg>
+                <span class="socials-text">Behance</span>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="https://www.instagram.com/ilona_lakritz/">
+                <svg class="socials-icon" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 9.768a2.232 2.232 0 1 0 0 4.463 2.232 2.232 0 0 0 0-4.463Zm8.937-2.205a5.876 5.876 0 0 0-.378-2.034 3.598 3.598 0 0 0-2.088-2.088 5.877 5.877 0 0 0-2.034-.378C15.276 3 14.934 3 12 3s-3.276 0-4.437.063a5.877 5.877 0 0 0-2.034.378 3.6 3.6 0 0 0-2.088 2.088 5.877 5.877 0 0 0-.378 2.034C3 8.724 3 9.066 3 12s0 3.276.063 4.437c.01.697.137 1.388.378 2.043.18.474.46.903.819 1.26a3.5 3.5 0 0 0 1.269.819c.65.245 1.339.373 2.034.378C8.724 21 9.066 21 12 21s3.276 0 4.437-.063a5.876 5.876 0 0 0 2.034-.378c.477-.177.91-.457 1.269-.819.36-.357.64-.786.819-1.26a5.941 5.941 0 0 0 .378-2.043C21 15.276 21 14.934 21 12s0-3.276-.063-4.437Zm-2.286 7.2a5.157 5.157 0 0 1-.351 1.62 3.474 3.474 0 0 1-1.917 1.917 5.158 5.158 0 0 1-1.629.315H9.246a5.158 5.158 0 0 1-1.629-.315 3.159 3.159 0 0 1-1.179-.774 3.16 3.16 0 0 1-.738-1.143 4.94 4.94 0 0 1-.306-1.629V9.246c.01-.556.113-1.107.306-1.629.166-.446.43-.85.774-1.179A3.231 3.231 0 0 1 7.617 5.7a5.157 5.157 0 0 1 1.629-.315h5.508a5.157 5.157 0 0 1 1.629.315c.446.166.85.43 1.179.774.326.323.578.713.738 1.143.192.522.299 1.073.315 1.629V12c0 1.854.063 2.043.036 2.754v.009Zm-1.44-6.696a2.142 2.142 0 0 0-1.269-1.269A3.6 3.6 0 0 0 14.7 6.6H9.3a3.6 3.6 0 0 0-1.242.234 2.142 2.142 0 0 0-1.269 1.224c-.13.4-.195.82-.189 1.242v5.4c.009.424.088.844.234 1.242a2.142 2.142 0 0 0 1.269 1.269c.384.141.788.22 1.197.234h5.4a3.602 3.602 0 0 0 1.242-.234 2.143 2.143 0 0 0 1.269-1.269c.15-.397.23-.817.234-1.242V9.3c0-.425-.08-.846-.234-1.242v.009ZM12 15.438A3.429 3.429 0 0 1 8.571 12 3.438 3.438 0 1 1 12 15.438Zm3.6-6.201a.81.81 0 0 1 0-1.611.81.81 0 0 1 0 1.611Z" fill="#000"/></svg>
+                <span class="socials-text">Instagram</span>
+              </a>
+            </li>
+          </ul>
+          <p class="email-item">Contact me: <a href="mailto:ilonasurdream@gmail.com">ilonasurdream@gmail.com</a></p>
+        </div>
+        <div class="projects">
+          <div class="project-first">
+            <span class="subject">Work:</span>
+            <ul class="project-list">
+              <li class="project-item">Frontend developer (08/2019 – 11/2021)</li>
+            </ul>
+            <span class="project-place">Travelask</span>
+          </div>
+          <div class="project-second">
+            <span class="subject">Projects:</span>
+            <ul class="project-list">
+              <li class="project-item">
+                <a class="project-link project-link--pb" href="#pet-booking">Pet booking: Ios app Design&nbsp;(2022)</a>
+              </li>
+              <li class="project-item">
+                <a class="project-link project-link--abstract" href="#abstract">Museum&nbsp; of Abstract Art: Adaptive Design&nbsp;(2022)</a>
+              </li>
+              <li class="project-item">
+                <a class="project-link project-link--uber" href="#uber">Developing new feature for Uber: ios app design&nbsp;(2022)</a>
+              </li>
+            </ul>
+            <span class="project-place">Yandex Practicum</span>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="project-section" id="pet-booking">
+    <section class="section project-section" id="pet-booking">
       <h2 class="second-heading">Pet booking</h2>
       <p class="caption">Ios app Design (2022)</p>
+      <div class="image-flex">
+        <img src="./images/pb_1.png" width="243" height="498" alt="Pet booking app – search screen" class="project-image">
+        <img src="./images/pb_2.png" width="243" height="498" alt="Pet booking app – my order screen" class="project-image">
+        <img src="./images/pb_3.png" width="243" height="498" alt="Pet booking app – petsitter card screen" class="project-image">
+        <img src="./images/pb_4.png" width="243" height="498" alt="Pet booking app – map screen" class="project-image">
+        <img src="./images/pb_5.png" width="243" height="498" alt="Pet booking app – profile screen" class="project-image">
+      </div>
       <div class="text-container">
         <p class="text">This is the ios app for fast petsitter’s search, designed for people who have pets and want to travel or need to
-         go to business trip. I started my work with existing app competitors’ analisis. Then I designed wireframes, did
+         go to a business trip. I started my work with existing app competitors’ analisis. Then I designed wireframes, I did
           hallway testing to find weak points before the next step, designing UI. Respondents shared valuable insights
-           with me, that helped me to make design easier to see.
+           with me, that helped me to make design easier to interact with.
         </p>
         <p class="text">
           Icons, colour and typography were selected so as to highlight the «human aspect» of the app, caring, user-friendly to a user. It gives a feeling, that there is somebody you can trust, the trust is very important thing
           in such situation like petsitting. Many rounded corners were used, icons taken from the same set.
-          All components I drawn in details in UI-Kit with different states.
+          All components I drew in details in UI-Kit with different states.
         </p>
       </div>
       <a href="https://www.behance.net/gallery/141047797/Pet-Booking-App" class="behance-link">View on Behance</a>
     </section>
-    <section class="project-section" id="abstract">
-      <h2 class="second-heading">Museum of Abstract Art</h2>
+    <section class="section project-section" id="abstract">
+      <h2 class="second-heading">Museum&nbsp; of Abstract Art</h2>
       <p class="caption">Adaptive Design (2022)</p>
       <div class="text-container">
         <p class="text">Web project with online museum, allowing you booking abstract art excursions to view in different
@@ -69,12 +109,12 @@
              excursions and available time.
         </p>
         <p class="text">It was crucial to provide possibility to obtain online excursion the most user-friendly way. 
-          Colours and typography were selected carefully not to cause any discomfort for eyes.
+          Colours and typography were selected carefully not to cause any discomfort to eyes.
         </p>
       </div>
       <a href="https://www.behance.net/gallery/141283625/Museum-of-abstraction" class="behance-link">View on Behance</a>
     </section>
-    <section class="project-section" id="uber">
+    <section class="section project-section" id="uber">
       <h2 class="second-heading">Developing new feature for Uber</h2>
       <p class="caption">Ios app Design (2022)</p>
       <div class="text-container">
@@ -86,7 +126,7 @@
         </p>
         <p class="text">During wirefames testing I found out that the route I drew wasn’t clear for users. Route was
            divided on tabs named «More coincidences» and «Less coincidences», and also there was a button «Join in» that
-            confuse people finally. As a result I decided to separate one function on two: myself as a co-rider, who wants
+            confused people finally. As a result I decided to separate one function on two: myself as a co-rider, who wants
              to join  another co-rider and function, allowing to pick up co-riders when I act as an initiator of a ride.
         </p>
       </div>
@@ -94,27 +134,28 @@
     </section>
   </main>
   <footer>
-    <p>Contact me: <a href="mailto:ilonasurdream@gmail.com">ilonasurdream@gmail.com</a></p>
-    <ul class="socials-list">
-      <li class="socials-item">
-        <a class="socials-link" href="https://www.linkedin.com/in/ilona-khomenko-47888281/">
+    <p class="footer-email">Contact me: <a href="mailto:ilonasurdream@gmail.com">ilonasurdream@gmail.com</a></p>
+    <ul class="footer-list">
+      <li class="footer-item">
+        <a class="footer-link" href="https://www.linkedin.com/in/ilona-khomenko-47888281/">
           <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715h-.001ZM7.003 8.575a1.546 1.546 0 0 1-1.287-2.409 1.548 1.548 0 1 1 1.286 2.409h.001Zm1.336 9.764H5.666V9.75H8.34v8.589h-.001ZM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.004Z" fill="#000"/></svg>
           <span>LinkedIn</span>
         </a>
       </li>
-      <li class="socials-item">
-        <a class="socials-link" href="https://www.behance.net/ilonakhomenko">
+      <li class="footer-item">
+        <a class="footer-link" href="https://www.behance.net/ilonakhomenko">
           <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613a3.11 3.11 0 0 1-.974 1.114 4.315 4.315 0 0 1-1.399.64 6.29 6.29 0 0 1-1.609.206H2V5.731h5.803Zm-.351 4.972c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707a1.114 1.114 0 0 0-.417-.428 1.683 1.683 0 0 0-.597-.215 3.609 3.609 0 0 0-.697-.061H4.71v2.875h2.742Zm.151 5.239c.267 0 .521-.023.76-.077.241-.052.455-.136.637-.261.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.414-.404H4.71v3.39h2.893v-.001Zm8.565-.041c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693-.702 0-1.334-.113-1.9-.337a4.033 4.033 0 0 1-1.439-.958 4.37 4.37 0 0 1-.905-1.485 5.432 5.432 0 0 1-.32-1.899c0-.666.111-1.289.329-1.864a4.375 4.375 0 0 1 .934-1.493c.405-.42.885-.751 1.444-.994a4.634 4.634 0 0 1 1.858-.362c.754 0 1.413.146 1.979.44.549.28 1.025.685 1.39 1.182.363.493.622 1.058.783 1.691.161.632.217 1.292.171 1.983h-6.431c.001.704.238 1.371.606 1.729Zm2.812-4.681c-.291-.322-.783-.496-1.385-.496-.391 0-.714.065-.974.199-.238.12-.449.287-.62.491a1.77 1.77 0 0 0-.328.628 2.817 2.817 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409Zm-3.918-4.663h4.989v1.215h-4.989V6.557Z" fill="#000"/></svg>
           <span>Behance</span>
         </a>
       </li>
-      <li class="socials-item">
-        <a  class="socials-link" href="https://www.instagram.com/ilona_lakritz/">
+      <li class="footer-item">
+        <a  class="footer-link" href="https://www.instagram.com/ilona_lakritz/">
           <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 9.768a2.232 2.232 0 1 0 0 4.463 2.232 2.232 0 0 0 0-4.463Zm8.937-2.205a5.876 5.876 0 0 0-.378-2.034 3.598 3.598 0 0 0-2.088-2.088 5.877 5.877 0 0 0-2.034-.378C15.276 3 14.934 3 12 3s-3.276 0-4.437.063a5.877 5.877 0 0 0-2.034.378 3.6 3.6 0 0 0-2.088 2.088 5.877 5.877 0 0 0-.378 2.034C3 8.724 3 9.066 3 12s0 3.276.063 4.437c.01.697.137 1.388.378 2.043.18.474.46.903.819 1.26a3.5 3.5 0 0 0 1.269.819c.65.245 1.339.373 2.034.378C8.724 21 9.066 21 12 21s3.276 0 4.437-.063a5.876 5.876 0 0 0 2.034-.378c.477-.177.91-.457 1.269-.819.36-.357.64-.786.819-1.26a5.941 5.941 0 0 0 .378-2.043C21 15.276 21 14.934 21 12s0-3.276-.063-4.437Zm-2.286 7.2a5.157 5.157 0 0 1-.351 1.62 3.474 3.474 0 0 1-1.917 1.917 5.158 5.158 0 0 1-1.629.315H9.246a5.158 5.158 0 0 1-1.629-.315 3.159 3.159 0 0 1-1.179-.774 3.16 3.16 0 0 1-.738-1.143 4.94 4.94 0 0 1-.306-1.629V9.246c.01-.556.113-1.107.306-1.629.166-.446.43-.85.774-1.179A3.231 3.231 0 0 1 7.617 5.7a5.157 5.157 0 0 1 1.629-.315h5.508a5.157 5.157 0 0 1 1.629.315c.446.166.85.43 1.179.774.326.323.578.713.738 1.143.192.522.299 1.073.315 1.629V12c0 1.854.063 2.043.036 2.754v.009Zm-1.44-6.696a2.142 2.142 0 0 0-1.269-1.269A3.6 3.6 0 0 0 14.7 6.6H9.3a3.6 3.6 0 0 0-1.242.234 2.142 2.142 0 0 0-1.269 1.224c-.13.4-.195.82-.189 1.242v5.4c.009.424.088.844.234 1.242a2.142 2.142 0 0 0 1.269 1.269c.384.141.788.22 1.197.234h5.4a3.602 3.602 0 0 0 1.242-.234 2.143 2.143 0 0 0 1.269-1.269c.15-.397.23-.817.234-1.242V9.3c0-.425-.08-.846-.234-1.242v.009ZM12 15.438A3.429 3.429 0 0 1 8.571 12 3.438 3.438 0 1 1 12 15.438Zm3.6-6.201a.81.81 0 0 1 0-1.611.81.81 0 0 1 0 1.611Z" fill="#000"/></svg>
           <span>Instagram</span>
         </a>
       </li>
     </ul>
   </footer>
+  <button class="button-scroll">Up</button>
 </body>
 </html>
