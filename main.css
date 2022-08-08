@@ -31,7 +31,6 @@ a {
 }
 
 .primary-section {
-  position: relative;
   background-image: url(./images/bg_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,9 +49,15 @@ a {
 }
 
 .email-item {
+  font-family: "Fira_sans light", sans-serif;
+  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 36px;
+}
+
+.email-item a {
+  display: block;
 }
 
 .email-item a:hover {
@@ -67,16 +72,21 @@ a {
   color: #410D83;
 }
 
+.project-link {
+  position: relative;
+}
+
 .project-link:hover::after {
   position: absolute;
   content: '';
   background-repeat: no-repeat;
   background-size: cover;
-  left: 48%;
+  left: -2px;
   animation-name: fadeIn;
   animation-duration: 1s; 
   animation-timing-function: ease; 
   visibility: visible !important; 
+  z-index: 1;
 }
 
 @keyframes fadeIn {
@@ -101,7 +111,8 @@ a {
   background-image: url('./images/pb_hover.png');
   width: 120px;
   height: 243px;
-  bottom: 16%;
+  top: 45px;
+  left: 175px;
   transition: .3s ease-in-out;
 }
 
@@ -109,16 +120,14 @@ a {
   background-image: url('./images/am_hover.png');
   width: 358px;
   height: 260px;
-  bottom: 9%;
+  top: 75px;
 }
 
 .project-link--uber:hover::after {
   background-image: url('./images/uber_hover.png');
   width: 120px;
   height: 243px;
-  bottom: 2%;
-  right: 158px;
-  left: auto;
+  top: 75px;
 }
 
 .text-container {
@@ -128,6 +137,7 @@ a {
 .text {
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: -1px;
 }
 
 .text:not(:last-child) {
@@ -282,10 +292,6 @@ h1 {
 
 .project-image:not(:last-child) {
   margin-right: 24px;
-}
-
-.button-scroll {
-  display: none;
 }
 
 .scroll-container {

@@ -37,6 +37,10 @@
   footer {
     padding: 60px 40px;
   }
+
+  .email-item {
+    display: flex
+  }
 }
 
 @media screen and (min-width: 834px) {
@@ -148,7 +152,6 @@
   }
 
   .button-scroll {
-    display: block;
     width: 70px;
     height: 70px;
     position: fixed;
@@ -183,6 +186,10 @@
     background-image: linear-gradient(to bottom, #410D83 0%, rgba(65, 13, 131, 0.15) 100%);
     background-color: #ffffff;
     transition: .2s ease;
+  }
+
+  .button-scroll:focus {
+    background-image: linear-gradient(to bottom, #410D83 0%, rgba(65, 13, 131, 0.50) 100%);
   }
 
   .footer-item {
@@ -242,6 +249,10 @@
     padding-left: 60px;
   }
 
+  .photo-wrap {
+    max-width: 547px;
+  }
+
   .img-container {
     width: 547px;
     height: 606px;
@@ -254,12 +265,24 @@
   .project-item,
   .subject,
   .project-place {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 0;
+    letter-spacing: -2px;
   }
 
-  .project-list {
-    margin-bottom: 28px;
+  .subject {
+    width: 131px;
+    flex-shrink: 0;
+  }
+
+  .project-first,
+  .project-second {
+    display: flex;
+  }
+
+  .project-wrap {
+    margin-left: 30px;
   }
 
   .text-container {
@@ -330,6 +353,24 @@
     padding-left: 135px;
     margin-left: -135px;
     margin-right: -135px;
+  }
+
+  .subject {
+    width: 105px;
+  }
+
+  .project-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+  }
+
+  .project-list {
+    width: 546px;
+  }
+
+  .project-place {
+    margin-left: 20px;
   }
 
   footer {

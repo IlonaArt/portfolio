@@ -16,11 +16,11 @@
         <h1>Ilona Khomenko</h1>
         <b class="subheading">UI/UX Designer</b>
         <picture class="img-container">
-          <source media="(max-width: 500px)" srcset="./images/Ilona_Khomenko_mob.jpg">
-          <source media="(max-width: 1024px)" srcset="./images/Ilona_Khomenko_tab.jpg">
+          <source media="(max-width: 499px)" srcset="./images/Ilona_Khomenko_mob.jpg">
+          <source media="(max-width: 833px)" srcset="./images/Ilona_Khomenko_tab.jpg">
           <img src="./images/Ilona_Khomenko.jpg" width="547" height="606" alt="Ilona Khomenko" class="main-img">
         </picture>
-        <p class="description">Hi! I am Ilona Khomenko. I use iterative approach in single page and mobile applications design. 
+        <p class="description">Hi! I am Ilona Khomenko. I use an iterative approach in single page and mobile applications design. 
           Thinking about users and never stop asking questions are the main points when I do user research. I have
             background of frontend development (2 years experience of writing semantic HTML and CSS coding) and psychology
         </p>
@@ -52,25 +52,29 @@
         <div class="projects">
           <div class="project-first">
             <span class="subject">Work:</span>
-            <ul class="project-list">
-              <li class="project-item">Frontend developer (08/2019 – 11/2021)</li>
-            </ul>
-            <span class="project-place">Travelask</span>
+            <div class="project-wrap">
+              <ul class="project-list">
+                <li class="project-item">Frontend developer (08/2019 – 11/2021)</li>
+              </ul>
+              <span class="project-place">Travelask</span>
+            </div>
           </div>
           <div class="project-second">
             <span class="subject">Projects:</span>
-            <ul class="project-list">
-              <li class="project-item">
-                <a class="project-link project-link--pb" href="#pet-booking">Pet booking: Ios app Design&nbsp;(2022)</a>
-              </li>
-              <li class="project-item">
-                <a class="project-link project-link--abstract" href="#abstract">Museum&nbsp; of Abstract Art: Adaptive Design&nbsp;(2022)</a>
-              </li>
-              <li class="project-item">
-                <a class="project-link project-link--uber" href="#uber">Developing new feature for Uber: ios app design&nbsp;(2022)</a>
-              </li>
-            </ul>
-            <span class="project-place">Yandex Practicum</span>
+            <div class="project-wrap">
+              <ul class="project-list">
+                <li class="project-item">
+                  <a class="project-link project-link--pb" href="#pet-booking">Pet booking: Ios app Design&nbsp;(2022)</a>
+                </li>
+                <li class="project-item">
+                  <a class="project-link project-link--abstract" href="#abstract">Museum&nbsp; of Abstract Art: Adaptive Design&nbsp;(2022)</a>
+                </li>
+                <li class="project-item">
+                  <a class="project-link project-link--uber" href="#uber">Developing new feature for Uber: ios app design&nbsp;(2022)</a>
+                </li>
+              </ul>
+              <span class="project-place">Yandex Practicum</span>
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +105,7 @@
         <a href="https://www.behance.net/gallery/141047797/Pet-Booking-App" class="behance-link">View on Behance</a>
       </section>
       <section class="section project-section" id="abstract">
-        <h2 class="second-heading">Museum&nbsp; of Abstract Art</h2>
+        <h2 class="second-heading">Museum&nbsp;of Abstract Art</h2>
         <p class="caption">Adaptive Design (2022)</p>
         <picture class="image-container">
           <source media="(max-width: 500px)" srcset="./images/am_bg_mob.png">
@@ -170,6 +174,7 @@
     </ul>
     <p class="footer-email">Contact me: <a href="mailto:ilonasurdream@gmail.com">ilonasurdream@gmail.com</a></p>
   </footer>
-  <button class="button-scroll">Up</button>
+  <button class="button-scroll hidden">Up</button>
+  <script src="./script.js"></script>
 </body>
 </html>
