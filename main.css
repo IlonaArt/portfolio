@@ -58,6 +58,7 @@ a {
 
 .email-item a {
   display: block;
+  margin-left: 4px;
 }
 
 .email-item a:hover {

@@ -4,11 +4,10 @@ const link = document.querySelector('.project-link');
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 buttonScroll.addEventListener('click', function (e) {
-  buttonScroll.scrollIntoView({
+  block.scrollIntoView({
     behavior: 'smooth',
-    block: 'end'
+    block: 'start'
   })
-  window.scrollTo(scrollX, 0);
 });
 
 
