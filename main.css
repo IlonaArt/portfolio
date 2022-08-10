@@ -77,35 +77,20 @@ a {
   position: relative;
 }
 
-.project-link:hover::after {
-  position: absolute;
+.project-link::after {
   content: '';
+  position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
-  left: -2px;
-  animation-name: fadeIn;
-  animation-duration: 1s; 
-  animation-timing-function: ease; 
-  visibility: visible !important; 
+  opacity: 0;
   z-index: 1;
+  transform: scale(0);
+  transition: all .5s ease;
 }
 
-@keyframes fadeIn {
-  0% {
-      transform: scale(0);
-      opacity: 0.0;
-  }
-  60% {
-      transform: scale(1.1);  
-  }
-  80% {
-      transform: scale(0.9);
-      opacity: 1; 
-  }   
-  100% {
-      transform: scale(1);
-      opacity: 1; 
-  }       
+.project-link:hover::after {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .project-link--pb:hover::after {
@@ -114,14 +99,14 @@ a {
   height: 243px;
   top: 45px;
   left: 175px;
-  transition: .3s ease-in-out;
 }
 
-.project-link--abstract:hover::after  {
+.project-link--abstract:hover::after {
   background-image: url('./images/am_hover.png');
   width: 358px;
   height: 260px;
   top: 75px;
+  left: -2px;
 }
 
 .project-link--uber:hover::after {
@@ -129,6 +114,7 @@ a {
   width: 120px;
   height: 243px;
   top: 75px;
+  left: 87px;
 }
 
 .text-container {
@@ -335,9 +321,13 @@ footer {
   line-height: 22px;
   font-weight: 400;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .footer-email a:hover {
   color: #410D83;
+}
+
+.footer-email span {
+  margin-right: 4px;
 }

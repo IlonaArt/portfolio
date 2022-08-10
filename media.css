@@ -1,3 +1,9 @@
+@media screen and (max-width: 743px) {
+  .button-scroll {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 744px) {
   .section {
     padding-left: 40px;
@@ -26,20 +32,55 @@
     padding-right: 40px;
   }
 
-  .footer-email {
-    flex-direction: row;
-  }
-
-  .footer-email a {
-    margin-left: 4px;
-  }
-
   footer {
     padding: 60px 40px;
   }
 
   .email-item {
     display: flex
+  }
+
+  .button-scroll {
+    width: 70px;
+    height: 70px;
+    font-family: "Fira_sans regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -1px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #292929;
+    border: none;
+    padding: 0;
+    color: #ffffff;
+    border-radius: 50%;
+  }
+
+  .button-scroll::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 4px;
+    left: 23px;
+    background-image: url('./images/chevrons-up.svg');
+    opacity: 0;
+    transition: .2s ease-out;
+  }
+
+  .button-scroll:hover::before {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+
+  .button-scroll:focus {
+    background-image: linear-gradient(to bottom, #410D83 0%, rgba(65, 13, 131, 0.50) 100%);
+  }
+
+  .text:not(:last-child) {
+    margin-bottom: 16px;
   }
 }
 
@@ -95,11 +136,16 @@
   }
 
   .text-container {
-    column-count: 2;
-    column-gap: 40px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
   }
 
   .text {
+    width: 50%;
+  }
+
+  .text:not(:last-child) {
     margin-bottom: 0;
   }
 
@@ -151,34 +197,12 @@
     margin-left: 50px;
   }
 
+  .footer-item {
+    margin-left: 50px;
+  }
+
   .button-scroll {
-    width: 70px;
-    height: 70px;
-    position: fixed;
     bottom: 110px;
-    right: 20px;
-    background-color: #292929;
-    border: none;
-    padding: 0;
-    color: #ffffff;
-    border-radius: 50%;
-  }
-
-  .button-scroll::before {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 4px;
-    left: 23px;
-    background-image: url('./images/chevrons-up.svg');
-    opacity: 0;
-    transition: .2s ease-out;
-  }
-
-  .button-scroll:hover::before {
-    opacity: 1;
-    transform: translateY(-3px);
   }
 
   .button-scroll:hover {
@@ -186,14 +210,6 @@
     background-image: linear-gradient(to bottom, #410D83 0%, rgba(65, 13, 131, 0.15) 100%);
     background-color: #ffffff;
     transition: .2s ease;
-  }
-
-  .button-scroll:focus {
-    background-image: linear-gradient(to bottom, #410D83 0%, rgba(65, 13, 131, 0.50) 100%);
-  }
-
-  .footer-item {
-    margin-left: 50px;
   }
 }
 
@@ -262,7 +278,13 @@
     margin-top: 145px;
   }
 
-  .project-item,
+  .project-item {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 0;
+    letter-spacing: -2px;
+  }
+
   .subject,
   .project-place {
     font-size: 30px;
@@ -338,7 +360,7 @@
   }
 
   .text-container {
-    column-gap: 75px;
+    gap: 75px;
   }
 
   .projects {
