@@ -66,11 +66,16 @@ a {
 }
 
 .behance-link {
+  line-height: 28px;
   text-transform: uppercase;
 }
 
 .behance-link:hover {
   color: #410D83;
+}
+
+.behance-link--m {
+  margin-right: 16px;
 }
 
 .project-link {
@@ -330,4 +335,9 @@ footer {
 
 .footer-email span {
   margin-right: 4px;
+}
+
+.behance-links {
+  display: flex;
+  flex-wrap: wrap;
 }
