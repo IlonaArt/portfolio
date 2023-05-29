@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 body {
-  font-family: "Fira_sans light", sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
   font-size: 18px;
   line-height: 24px;
@@ -22,7 +22,7 @@ ul {
 }
 
 a {
-  color: #000000;
+  color: #292929;
 }
 
 .section {
@@ -34,11 +34,33 @@ a {
   background-image: url(./images/bg_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 44px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.secondary-section {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+.secondary-section  .second-heading {
+  text-align: center;
+}
+
+.secondary-section .project-place {
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.secondary-section .main-text {
+  width: 100%;
+}
+
 .socials-list {
+  display: flex;
+  gap: 50px;
   margin-bottom: 24px;
 }
 
@@ -49,16 +71,13 @@ a {
 }
 
 .email-item {
-  font-family: "Fira_sans light", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 36px;
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 50px;
 }
 
 .email-item a {
   display: block;
-  margin-left: 4px;
 }
 
 .email-item a:hover {
@@ -122,14 +141,57 @@ a {
   left: 87px;
 }
 
+.project-link--toogethr:hover::after {
+  background-image: url('./images/toogether_ hover.png');
+  width: 267px;
+  height: 294px;
+  top: 44px;
+  left: 88px;
+}
+
 .text-container {
   margin-bottom: 16px;
 }
 
+.text-container.mb-120 {
+  margin-bottom: 60px;
+}
+
+.text-container.mb-60 {
+  margin-bottom: 40px;
+}
+
+.text-container.mb-90 {
+  margin-bottom: 40px;
+}
+
 .text {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -1px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.main-text {
+  font-size: 20px;
+  line-height: 28px;
+  width: 50%;
+}
+
+.main-text.fw,
+.result-list-item::marker {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.text-bold {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.text-bold.margin {
+  margin-bottom: 12px;
 }
 
 .text:not(:last-child) {
@@ -145,7 +207,6 @@ h1 {
 }
 
 .subheading {
-  font-family: "Fira_sans regular";
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
@@ -153,9 +214,9 @@ h1 {
 }
 
 .description {
-  font-family: "Fira_sans regular";
   font-size: 15px;
   line-height: 21px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -164,14 +225,17 @@ h1 {
 }
 
 .socials-text {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 22px;
   margin-left: 4px;
 }
 
 .socials-link:hover .socials-icon path,
 .footer-link:hover .footer-icon path {
-  fill: #410D83;
+  /* fill: #410D83; */
+  fill: linear-gradient(180deg, #410D83 2.08%, rgba(56, 13, 131, 0.85) 24.48%, rgba(114, 13, 131, 0.25) 81.77%, rgba(65, 13, 131, 0.15) 100%);
+  /* background: linear-gradient (to bottom, #410D83 100%, #380D83 85%, #720D83
+ 25%, #410D83 15%); */
   transition: 0.2s ease;
 }
 
@@ -181,22 +245,63 @@ h1 {
   transition: 0.2s ease;
 }
 
+.list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-wrap:first-child {
+  margin-bottom: 20px;
+}
+
 .second-heading {
-  font-family: "Fira_sans medium";
-  font-size: 40px;
-  line-height: 45px;
+  font-size: 38px;
+  line-height: 46px;
   font-weight: 500;
   letter-spacing: -2px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.third-heading {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.fourth-heading {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin-bottom: 12px;
 }
 
 .caption {
-  font-family: "Fira_sans regular";
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
   letter-spacing: -2px;
   margin-bottom: 24px;
+}
+
+.subcaption {
+  display: block;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.paragraph .main-text,
+.user-flow-section .main-text {
+  width: 100%;
+}
+
+.user-flow-section .secondary-list-item {
+  width: 100%;
 }
 
 .img-container {
@@ -215,14 +320,12 @@ h1 {
 }
 
 .project-item,
-.subject,
-.project-place {
+.subject {
   font-size: 28px;
   line-height: 34px;
 }
 
 .subject {
-  font-family: "Fira_sans regular";
   display: block;
   font-weight: 400;
   margin-bottom: 20px;
@@ -230,15 +333,19 @@ h1 {
 
 .project-place {
   color: #371B5A;
+  font-size: 26px;
+  line-height: 32px;
 }
 
 .project-list {
+  max-width: 546px;
+  margin-right: 20px;
   margin-bottom: 16px;
 }
 
 .project-item {
-  font-family: "Fira_sans light";
   text-transform: uppercase;
+  letter-spacing: -2px;
 }
 
 .project-item:not(:last-child) {
@@ -269,7 +376,7 @@ h1 {
 }
 
 .section-uber {
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .image-flex {
@@ -286,6 +393,39 @@ h1 {
   margin-right: 24px;
 }
 
+.secondary-list-section {
+  margin-bottom: 60px;
+}
+
+.secondary-list {
+  list-style: unset;
+}
+
+.secondary-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.secondary-list .main-text {
+  width: 100%;
+}
+
+.secondary-list.non-dots {
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.user-flow-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 60px;
+}
+
+.user-flow-image {
+  width: 100%;
+  height: 100%;
+}
+
 .scroll-container {
   scroll-behavior: smooth;
 }
@@ -293,6 +433,42 @@ h1 {
 .image-container {
   display: block;
   margin-bottom: 24px;
+}
+
+.finalized-wrap {
+  margin-bottom: 30px;
+}
+
+.before-after-image {
+  display: none;
+}
+
+.before-image-mob {
+  margin-bottom: 30px;
+}
+
+.after-image1-mob {
+  margin-bottom: 24px;
+}
+
+.image,
+.image-registered-desktop {
+  width: 100%;
+  height: 100%;
+}
+
+.image-registered-mob, 
+.image-registered-desktop {
+  margin-bottom: 12px;
+}
+
+.finalized-aection {
+  margin-bottom: 60px;
+}
+
+.finalized-list {
+  width: 100%;
+  margin: 0;
 }
 
 footer {
@@ -303,6 +479,8 @@ footer {
 }
 
 .footer-list {
+  display: flex;
+  gap: 50px;
   margin-bottom: 32px;
 }
 
@@ -321,9 +499,8 @@ footer {
 }
 
 .footer-email {
-  font-family: "Fira_sans regular";
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 24px;
   font-weight: 400;
   display: flex;
   flex-wrap: wrap;

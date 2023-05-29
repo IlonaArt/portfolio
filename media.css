@@ -37,14 +37,14 @@
   }
 
   .email-item {
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .button-scroll {
     width: 70px;
     height: 70px;
-    font-family: "Fira_sans regular";
-    font-weight: 400;
+    font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -1px;
@@ -63,7 +63,6 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    top: 4px;
     left: 23px;
     background-image: url('./images/chevrons-up.svg');
     opacity: 0;
@@ -72,11 +71,10 @@
 
   .button-scroll:hover::before {
     opacity: 1;
-    transform: translateY(-3px);
   }
 
   .button-scroll:focus {
-    background-image: linear-gradient(to bottom, #410D83 0%, rgba(65, 13, 131, 0.50) 100%);
+    background-image: linear-gradient(180deg, #410D83 2.08%, rgba(56, 13, 131, 0.85) 24.48%, rgba(114, 13, 131, 0.25) 81.77%, rgba(65, 13, 131, 0.15) 100%);
   }
 
   .text:not(:last-child) {
@@ -98,8 +96,8 @@
   }
 
   .description {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 26px;
     margin-bottom: 0;
   }
 
@@ -108,31 +106,41 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    padding-top: 15px;
   }
 
   .socials-list {
-    display: flex;
     margin-bottom: 0;
     padding-bottom: 0;
   }
 
   .socials-item {
     margin-bottom: 0;
-    margin-left: 30px;
+  }
+
+  .email-item {
+    margin-bottom: 0;
   }
 
   .projects {
-    margin-top: 55px;
+    margin-top: 28px;
   }
 
   .project-second {
     margin-top: 40px;
   }
 
-  .socials-list,
-  .email-item {
+  .image-registered-mob {
+    display: none;
+  }
+
+  .socials-list {
     margin-bottom: 20px;
+  }
+
+  .secondary-section .project-place {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 40px;
   }
 
   .text-container {
@@ -157,7 +165,6 @@
   }
 
   .footer-list {
-    display: flex;
     margin-bottom: 0;
   }
 
@@ -193,8 +200,87 @@
     margin-right: 40px;
   }
 
-  .socials-item {
+  .project-list {
+    margin-right: 20px;
+  }
+
+  .secondary-list-section {
+    margin-bottom: 120px;
+  }
+
+  .secondary-list {
+    display: flex;
+    column-gap: 94px;
+  }
+
+  .secondary-list.non-dots {
+    margin-bottom: 80px;
+  }
+
+  .secondary-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .text-container.mb-120 {
+    margin-bottom: 120px;
+  }
+
+  .text-container.mb-60 {
+    margin-bottom: 60px;
+  }
+
+  .text-container.mb-90 {
+    margin-bottom: 90px;
+  }
+
+  .third-heading {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .fourth-heading {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .subcaption {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .socials-item:first-child  {
     margin-left: 50px;
+  }
+
+  .main-text.fw,
+  .result-list-item::marker {
+    font-size: 20px;
+    line-height: 28px ;
+  }
+
+  .user-flow-wrap {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .user-flow-image { 
+    width: 801px;
+    height: 852px;
+  }
+
+  .before-after-image {
+    display: block;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .finalized-aection {
+    margin-bottom: 120px;
   }
 
   .footer-item {
@@ -207,9 +293,10 @@
 
   .button-scroll:hover {
     cursor: pointer;
-    background-image: linear-gradient(to bottom, #410D83 0%, rgba(65, 13, 131, 0.15) 100%);
+    background-image: linear-gradient(180deg, #410D83 2.08%, rgba(56, 13, 131, 0.85) 24.48%, rgba(114, 13, 131, 0.25) 81.77%, rgba(65, 13, 131, 0.15) 100%);
     background-color: #ffffff;
     transition: .2s ease;
+    color: transparent;
   }
 }
 
@@ -248,11 +335,7 @@
   .second-heading {
     font-size: 45px;
     line-height: 49px;
-    margin-bottom: 12px;
-  }
-
-  .section-uber {
-    padding-bottom: 80px;
+    margin-bottom: 16px;
   }
 
   .caption {
@@ -275,21 +358,23 @@
   }
 
   .projects {
-    margin-top: 145px;
+    margin-top: 50px;
   }
 
   .project-item {
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 0;
-    letter-spacing: -2px;
   }
 
-  .subject,
-  .project-place {
+  .subject {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 0;
+    letter-spacing: -2px;
+  }
+
+  .project-place {
     letter-spacing: -2px;
   }
 
@@ -304,6 +389,7 @@
   }
 
   .project-wrap {
+    flex-wrap: wrap;
     margin-left: 30px;
   }
 
@@ -363,10 +449,6 @@
     gap: 75px;
   }
 
-  .projects {
-    margin-top: 222px;
-  }
-
   .project-image:not(:last-child) {
     margin-right: 64px;
   }
@@ -385,10 +467,6 @@
     display: flex;
     justify-content: space-between;
     margin-left: 120px;
-  }
-
-  .project-list {
-    width: 546px;
   }
 
   .project-place {
