@@ -1,7 +1,6 @@
 const buttonScroll = document.querySelector('.button-scroll');
-const block = document.querySelector('.primary-section');
-const link = document.querySelector('.project-link');
-const anchors = document.querySelectorAll('a[href*="#"]')
+const block = document.querySelector('body');
+const anchors = document.querySelectorAll('.project-link[href*="#"]')
 
 buttonScroll.addEventListener('click', function (e) {
   block.scrollIntoView({

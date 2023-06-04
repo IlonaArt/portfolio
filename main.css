@@ -38,9 +38,44 @@ a {
   padding-bottom: 60px;
 }
 
+.primary-section-flex {
+  margin-bottom: 60px;
+}
+
+.facts-section-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facts-section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 288px;
+  height: 288px;
+  border-radius: 50%;
+  background-color: rgb(250 223 255 / 40%);
+}
+
+.facts-section-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.facts-section-text {
+  max-width: 182px;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
 .secondary-section {
   max-width: 1112px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .secondary-section  .second-heading {
@@ -58,6 +93,10 @@ a {
   width: 100%;
 }
 
+.secondary-section-heading {
+  margin-bottom: 24px;
+}
+
 .socials-list {
   display: flex;
   gap: 50px;
@@ -68,6 +107,38 @@ a {
   display: flex;
   align-items: center;
   text-decoration: none;
+}
+
+.main-stop,
+.second-stop,
+.third-stop,
+.alt-stop {
+  stop-color: #371B5A; 
+}
+
+.socials-link:hover svg linearGradient stop,
+.footer-link:hover svg linearGradient stop {
+  transition: stop-color 0.5s ease;
+}
+
+.socials-link:hover .main-stop,
+.footer-link:hover .main-stop {
+  stop-color:#410D83;
+}
+
+.socials-link:hover .second-stop,
+.footer-link:hover .second-stop {
+  stop-color: rgba(56, 13, 131, 0.77);
+}
+
+.socials-link:hover .third-stop,
+.footer-link:hover .third-stop {
+  stop-color: rgba(114, 13, 131, 0.25);
+}
+
+.socials-link:hover .alt-stop,
+.footer-link:hover .alt-stop {
+  stop-color: rgba(65, 13, 131, 0.15);
 }
 
 .email-item {
@@ -153,7 +224,8 @@ a {
   margin-bottom: 16px;
 }
 
-.text-container.mb-120 {
+.text-container.mb-120,
+.mb-120 {
   margin-bottom: 60px;
 }
 
@@ -221,7 +293,7 @@ h1 {
 }
 
 .socials-item {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .socials-text {
@@ -230,28 +302,50 @@ h1 {
   margin-left: 4px;
 }
 
-.socials-link:hover .socials-icon path,
-.footer-link:hover .footer-icon path {
-  /* fill: #410D83; */
-  fill: linear-gradient(180deg, #410D83 2.08%, rgba(56, 13, 131, 0.85) 24.48%, rgba(114, 13, 131, 0.25) 81.77%, rgba(65, 13, 131, 0.15) 100%);
-  /* background: linear-gradient (to bottom, #410D83 100%, #380D83 85%, #720D83
- 25%, #410D83 15%); */
-  transition: 0.2s ease;
-}
-
-.socials-link:hover,
-.footer-link:hover {
-  color: #410D83;
-  transition: 0.2s ease;
-}
-
 .list-wrap {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .list-wrap:first-child {
   margin-bottom: 20px;
+}
+
+.secondary-section-header {
+  background-image: url(./images/header_bg_mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.secondary-section-header .email-item {
+  margin-bottom: 0;
+}
+
+.heading-wrap {
+  margin-bottom: 50px;
+}
+
+.back-link {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.back-link svg {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.back-link:hover {
+  color: #720D83;
+}
+
+.back-link:hover svg path {
+  fill: #720D83;
 }
 
 .second-heading {
@@ -452,23 +546,55 @@ h1 {
 }
 
 .image,
-.image-registered-desktop {
+.image-result-desktop {
   width: 100%;
   height: 100%;
 }
 
-.image-registered-mob, 
-.image-registered-desktop {
+.image-result-mob, 
+.image-result-desktop {
   margin-bottom: 12px;
 }
 
-.finalized-aection {
+.image-result-mob.mb-24 {
+  margin-bottom: 24px;
+}
+
+.image-result-desktop {
+  display: none;
+}
+
+.finalized-section {
   margin-bottom: 60px;
 }
 
 .finalized-list {
   width: 100%;
   margin: 0;
+}
+
+.projects-section-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  transition: transform 0.25s;
+}
+
+.projects-section-image:hover {
+  transform: scale(0.8);
+}
+
+.projects-section {
+  margin-bottom: 40px;
+}
+
+.projects-section-link {
+  overflow: hidden;
+}
+
+.projects-section-link:hover .projects-section-image {
+  transform: scale(1.1);
 }
 
 footer {
@@ -494,8 +620,8 @@ footer {
   align-items: center;
 }
 
-.footer-item:not(:last-child) {
-  margin-bottom: 16px;
+.footer-item {
+  margin-bottom: 0;
 }
 
 .footer-email {
